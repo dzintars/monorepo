@@ -2,7 +2,7 @@
   "private": false,
   "name": "@my-sandbox/ui-pill",
   "description": "Testing NPM publishing",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Dzintars Klavins",
   "main": "dist/index.js",
