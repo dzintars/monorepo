@@ -2,6 +2,14 @@
   "private": false,
   "name": "@my-sandbox/ui-pill",
   "description": "Testing NPM publishing",
+  "homepage": "https://github.com/dzintars/monorepo/blob/master/packages/ui-pill#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzintars/monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dzintars/monorepo/issues"
+  },
   "version": "1.0.4",
   "license": "MIT",
   "author": "Dzintars Klavins",

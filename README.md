@@ -42,3 +42,16 @@ yarn bootstrap
 
 yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev
 yarn add prettier eslint-config-prettier eslint-plugin-prettier --dev
+
+
+To publish public NPM package in your module package.json you need to add:
+
+```json
+  "publishConfig": {
+    "access": "public"
+  },
+```
+
+This equivalent of npm/yarn publish --access public
+Learna does not support --access flag.
+
