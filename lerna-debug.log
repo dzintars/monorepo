@@ -1,0 +1,16 @@
+17 error Error: Command failed: git remote update
+17 error git@github.com: Permission denied (publickey).
+17 error fatal: Could not read from remote repository.
+17 error
+17 error Please make sure you have the correct access rights
+17 error and the repository exists.
+17 error error: Could not fetch origin
+17 error
+17 error Fetching origin
+17 error
+17 error     at makeError (/home/dzintars/Code/github.com/dzintars/monorepo/node_modules/execa/index.js:174:9)
+17 error     at Function.module.exports.sync (/home/dzintars/Code/github.com/dzintars/monorepo/node_modules/execa/index.js:338:15)
+17 error     at Object.execSync (/home/dzintars/Code/github.com/dzintars/monorepo/node_modules/@lerna/child-process/index.js:26:16)
+17 error     at updateRemote (/home/dzintars/Code/github.com/dzintars/monorepo/node_modules/@lerna/version/lib/is-behind-upstream.js:26:16)
+17 error     at isBehindUpstream (/home/dzintars/Code/github.com/dzintars/monorepo/node_modules/@lerna/version/lib/is-behind-upstream.js:11:3)
+17 error     at VersionCommand.initialize (/home/dzintars/Code/github.com/dzintars/monorepo/node_modules/@lerna/version/index.js:150:9)

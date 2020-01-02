@@ -65,6 +65,8 @@ To publish public NPM package in your module package.json you need to add:
   },
 ```
 
+[Some lerna/npm config examples](https://github.com/lerna/lerna/tree/master/commands/publish#per-package-configuration)
+
 First you need to build your component/s `yarn run build`
 Then you need to commit changes
 After you can publish them `yarn run pub`

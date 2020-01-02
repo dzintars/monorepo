@@ -17,7 +17,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { LitElement, html, customElement, property, css } from 'lit-element';
+import { LitElement, customElement, property } from 'lit-element';
+import Style from './style';
+import template from './template';
 /**
  * An example element.
  *
@@ -27,6 +29,12 @@ import { LitElement, html, customElement, property, css } from 'lit-element';
 let MyElement = class MyElement extends LitElement {
     constructor() {
         super(...arguments);
+        // public static get styles() {
+        //   return [
+        //     GlobalStyle,
+        //     Style
+        //   ];
+        // }
         /**
          * The name to say "Hello" to.
          */
@@ -37,14 +45,7 @@ let MyElement = class MyElement extends LitElement {
         this.count = 0;
     }
     render() {
-        return html `
-      <h1>Hello, ${this.name}!</h1>
-      <button @click=${this._onClick} part="button">
-        Click Count: ${this.count}
-      </button>
-      <h3>Test</h3>
-      <slot></slot>
-    `;
+        return template.call(this);
     }
     _onClick() {
         this.count++;
@@ -53,14 +54,7 @@ let MyElement = class MyElement extends LitElement {
         return 'foo';
     }
 };
-MyElement.styles = css `
-    :host {
-      display: block;
-      border: solid 1px gray;
-      padding: 16px;
-      max-width: 800px;
-    }
-  `;
+MyElement.styles = [Style];
 __decorate([
     property()
 ], MyElement.prototype, "name", void 0);

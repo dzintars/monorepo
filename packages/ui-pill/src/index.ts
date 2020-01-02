@@ -12,7 +12,9 @@
  * http://polymer.github.io/PATENTS.txt
  */
 
-import {LitElement, html, customElement, property, css} from 'lit-element';
+import {LitElement, customElement, property} from 'lit-element';
+import Style from './style';
+import template from './template';
 
 /**
  * An example element.
@@ -22,14 +24,13 @@ import {LitElement, html, customElement, property, css} from 'lit-element';
  */
 @customElement('my-element')
 export class MyElement extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      border: solid 1px gray;
-      padding: 16px;
-      max-width: 800px;
-    }
-  `;
+  public static styles = [Style];
+  // public static get styles() {
+  //   return [
+  //     GlobalStyle,
+  //     Style
+  //   ];
+  // }
 
   /**
    * The name to say "Hello" to.
@@ -43,18 +44,11 @@ export class MyElement extends LitElement {
   @property({type: Number})
   count = 0;
 
-  render() {
-    console.log('test');
-    return html`
-      <h1>Hello, ${this.name}!</h1>
-      <button @click=${this._onClick} part="button">
-        Click Count: ${this.count}
-      </button>
-      <slot></slot>
-    `;
+  protected render() {
+    return template.call(this);
   }
 
-  private _onClick() {
+  public _onClick() {
     this.count++;
   }
 

@@ -19,7 +19,7 @@ import { LitElement } from 'lit-element';
  * @csspart button - The button
  */
 export declare class MyElement extends LitElement {
-    static styles: import("lit-element").CSSResult;
+    static styles: import("lit-element").CSSResult[];
     /**
      * The name to say "Hello" to.
      */
@@ -28,8 +28,8 @@ export declare class MyElement extends LitElement {
      * The number of times the button has been clicked.
      */
     count: number;
-    render(): import("lit-element").TemplateResult;
-    private _onClick;
+    protected render(): any;
+    _onClick(): void;
     foo(): string;
 }
 declare global {
