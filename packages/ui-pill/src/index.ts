@@ -44,12 +44,12 @@ export class MyElement extends LitElement {
   count = 0;
 
   render() {
+    console.log('test');
     return html`
       <h1>Hello, ${this.name}!</h1>
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
       </button>
-      <h3>Test</h3>
       <slot></slot>
     `;
   }
