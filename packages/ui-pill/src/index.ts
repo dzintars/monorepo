@@ -22,8 +22,8 @@ import template from './template';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('my-element')
-export class MyElement extends LitElement {
+@customElement('ui-pill')
+export class UiPill extends LitElement {
   public static styles = [Style];
   // public static get styles() {
   //   return [
@@ -59,6 +59,6 @@ export class MyElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement;
+    'ui-pill': UiPill;
   }
 }

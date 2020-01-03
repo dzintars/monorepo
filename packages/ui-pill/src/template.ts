@@ -1,7 +1,7 @@
 import {html} from 'lit-element';
-import {MyElement} from './index';
+import {UiPill} from './index';
 
-export default function template(this: MyElement) {
+export default function template(this: UiPill) {
   return html`
     <h1>Hello, ${this.name}!</h1>
     <button @click=${this._onClick} part="button">
