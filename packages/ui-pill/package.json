@@ -13,7 +13,8 @@
   "keywords": [
     "web component",
     "lit-element",
-    "typescript"
+    "typescript",
+    "pill"
   ],
   "publishConfig": {
     "access": "public"
@@ -40,7 +41,7 @@
     "build:watch": "tsc --watch",
     "clean": "rm -rf ./dist",
     "compile": "tsc -b ./tsconfig.package.json",
-    "prepublish": "yarn run build"
+    "prepublishOnly": "yarn run build"
   },
   "dependencies": {
     "lit-element": "2.2.1"
