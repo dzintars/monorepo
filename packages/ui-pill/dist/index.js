@@ -26,7 +26,7 @@ import template from './template';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-let MyElement = class MyElement extends LitElement {
+let UiPill = class UiPill extends LitElement {
     constructor() {
         super(...arguments);
         // public static get styles() {
@@ -54,15 +54,15 @@ let MyElement = class MyElement extends LitElement {
         return 'foo';
     }
 };
-MyElement.styles = [Style];
+UiPill.styles = [Style];
 __decorate([
     property()
-], MyElement.prototype, "name", void 0);
+], UiPill.prototype, "name", void 0);
 __decorate([
     property({ type: Number })
-], MyElement.prototype, "count", void 0);
-MyElement = __decorate([
-    customElement('my-element')
-], MyElement);
-export { MyElement };
+], UiPill.prototype, "count", void 0);
+UiPill = __decorate([
+    customElement('ui-pill')
+], UiPill);
+export { UiPill };
 //# sourceMappingURL=index.js.map
