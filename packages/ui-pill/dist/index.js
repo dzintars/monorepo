@@ -18,7 +18,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { LitElement, customElement, property } from 'lit-element';
-import Style from './style';
+import style from './style';
 import template from './template';
 /**
  * An example element.
@@ -54,7 +54,7 @@ let UiPill = class UiPill extends LitElement {
         return 'foo';
     }
 };
-UiPill.styles = [Style];
+UiPill.styles = [style];
 __decorate([
     property()
 ], UiPill.prototype, "name", void 0);

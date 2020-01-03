@@ -33,8 +33,9 @@ export declare class UiPill extends LitElement {
     foo(): string;
 }
 declare global {
+    type NewType = UiPill;
     interface HTMLElementTagNameMap {
-        'ui-pill': UiPill;
+        'ui-pill': NewType;
     }
 }
 //# sourceMappingURL=index.d.ts.map

@@ -13,7 +13,7 @@
  */
 
 import {LitElement, customElement, property} from 'lit-element';
-import Style from './style';
+import style from './style';
 import template from './template';
 
 /**
@@ -24,7 +24,7 @@ import template from './template';
  */
 @customElement('ui-pill')
 export class UiPill extends LitElement {
-  public static styles = [Style];
+  public static styles = [style];
   // public static get styles() {
   //   return [
   //     GlobalStyle,
@@ -58,7 +58,9 @@ export class UiPill extends LitElement {
 }
 
 declare global {
+  type NewType = UiPill;
+
   interface HTMLElementTagNameMap {
-    'ui-pill': UiPill;
+    'ui-pill': NewType;
   }
 }
