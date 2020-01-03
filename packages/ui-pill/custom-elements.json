@@ -2,7 +2,7 @@
     "version": "experimental",
     "tags": [
       {
-        "name": "my-element",
+        "name": "ui-pill",
         "description": "An example element.",
         "attributes": [
           {

@@ -17,3 +17,7 @@ import '@my-sandbox/ui-pill'
 ....
 
 ```
+
+## Errors
+
+TS2717: Subsequent property declarations must have the same type.  Property ''ui-pill'' must be of type 'UiPill', but here has type 'UiPill'.

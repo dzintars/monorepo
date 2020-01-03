@@ -1,5 +1,7 @@
-.log
+node_modules/
 .DS_Store
-.jest-*
-lib
-node_modules
+
+/packages/*/*.tgz
+/packages/*/dist/
+*.tsbuildinfo
+*.log

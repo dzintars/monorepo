@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "ESNEXT",
+    "target": "ESNEXT",
+    "lib": [
+      "ESNEXT",
+      "dom",
+      "dom.iterable"
+    ],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "importHelpers": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
