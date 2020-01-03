@@ -1,14 +1,10 @@
 {
     "extends": "./tsconfig.base.json",
     "compilerOptions": {
-      "strict": true,
-      "moduleResolution": "node",
       "baseUrl": ".",
       "paths": {
         "@my-sandbox/*": ["packages/*/src"]
       },
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
       "plugins": [
         {
           "name": "ts-lit-plugin",

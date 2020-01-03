@@ -1,18 +1,30 @@
 {
   "compilerOptions": {
-    "module": "ESNEXT",
     "target": "ESNEXT",
+    "module": "ESNEXT",
+    "moduleResolution": "node",
     "lib": [
       "ESNEXT",
       "dom",
       "dom.iterable"
     ],
     "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
-    "moduleResolution": "node",
     "strict": true,
     "importHelpers": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "allowJs": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true
   },
   "exclude": [
     "node_modules",
