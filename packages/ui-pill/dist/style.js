@@ -9,5 +9,8 @@ export default css `
     padding: 16px;
     max-width: 800px;
   }
+  h1 {
+    margin: 0;
+  }
 `;
 //# sourceMappingURL=style.js.map
