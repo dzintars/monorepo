@@ -44,9 +44,3 @@ export class UiPill extends LitElement {
 }
 
 // customElements.define('ui-pill', UiPill);
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'ui-pill': UiPill;
-  }
-}

@@ -81,6 +81,11 @@ Lerna will update a package version, push changes to GitHub and publish new vers
       "paths": {
         "@my-sandbox/*": ["packages/*/src"]
       },
+
+      "baseUrl": "./packages",
+      "paths": {
+        "@my-sandbox/ui-pill": ["ui-pill/src"]
+      },
 ```
 
 ```json

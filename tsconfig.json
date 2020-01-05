@@ -1,16 +1,15 @@
 {
-    "extends": "./tsconfig.base.json",
-    "compilerOptions": {
-      "baseUrl": "./packages",
-      "paths": {
-        "@my-sandbox/ui-pill": ["ui-pill/src"]
-      },
-      "plugins": [
-        {
-          "name": "ts-lit-plugin",
-          "strict": true
-        }
-      ]
-    }
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@my-sandbox/*": ["packages/*/src"]
+    },
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      }
+    ]
   }
-  
+}

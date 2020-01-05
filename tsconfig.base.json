@@ -3,16 +3,12 @@
     "target": "ESNEXT",
     "module": "ESNEXT",
     "moduleResolution": "node",
-    "lib": [
-      "ESNEXT",
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["ESNEXT", "dom", "dom.iterable"],
     "strict": true,
     "importHelpers": false,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": false,
-    
+
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "alwaysStrict": true,
@@ -23,6 +19,6 @@
     "strictNullChecks": true,
     "noEmitHelpers": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   }
 }

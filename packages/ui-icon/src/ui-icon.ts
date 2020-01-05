@@ -2,12 +2,6 @@ import {LitElement, customElement, property, TemplateResult} from 'lit-element';
 import style from './style';
 import template from './template';
 
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
 @customElement('ui-icon')
 export class UiIcon extends LitElement {
   public static styles = [style];
@@ -18,15 +12,9 @@ export class UiIcon extends LitElement {
   //   ];
   // }
 
-  /**
-   * The name to say "Hello" to.
-   */
   @property()
   name = 'World';
 
-  /**
-   * The number of times the button has been clicked.
-   */
   @property({type: Number})
   count = 0;
 
@@ -44,9 +32,3 @@ export class UiIcon extends LitElement {
 }
 
 // customElements.define('ui-pill', UiPill);
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'ui-icon': UiIcon;
-  }
-}
