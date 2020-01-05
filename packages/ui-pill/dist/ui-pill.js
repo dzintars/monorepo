@@ -1,12 +1,7 @@
+import { __decorate } from "tslib";
 import { LitElement, customElement, property } from 'lit-element';
 import style from './style';
 import template from './template';
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
 let UiPill = class UiPill extends LitElement {
     constructor() {
         super(...arguments);
@@ -46,5 +41,4 @@ UiPill = __decorate([
     customElement('ui-pill')
 ], UiPill);
 export { UiPill };
-// customElements.define('ui-pill', UiPill);
 //# sourceMappingURL=ui-pill.js.map

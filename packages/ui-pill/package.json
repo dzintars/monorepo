@@ -38,8 +38,8 @@
   "scripts": {
     "build": "yarn run clean && yarn run compile",
     "build:watch": "tsc --watch",
-    "clean": "rm -rf ./dist && rm -rf tsconfig.package.tsbuildinfo",
-    "compile": "tsc -b ./tsconfig.package.json",
+    "clean": "rm -rf ./dist && rm -rf .tsbuildinfo",
+    "compile": "tsc -b ./tsconfig.json",
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {

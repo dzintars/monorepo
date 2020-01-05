@@ -1,10 +1,9 @@
 import { LitElement, TemplateResult } from 'lit-element';
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
+declare global {
+    interface HTMLElementTagNameMap {
+        'ui-pill': UiPill;
+    }
+}
 export declare class UiPill extends LitElement {
     static styles: import("lit-element").CSSResult[];
     /**
@@ -18,4 +17,9 @@ export declare class UiPill extends LitElement {
     protected render(): TemplateResult;
     _onClick(): void;
     foo(): string;
+}
+declare global {
+    interface HTMLElementTagNameMap {
+        'ui-pill': UiPill;
+    }
 }

@@ -1,22 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ESNEXT",
-    "module": "ESNEXT",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
-    "lib": ["ESNEXT", "dom", "dom.iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
     "strict": true,
     "importHelpers": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": false,
 
-    "noImplicitAny": true,
     "noImplicitReturns": true,
-    "alwaysStrict": true,
-    "allowJs": false,
-    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strictNullChecks": true,
     "noEmitHelpers": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true

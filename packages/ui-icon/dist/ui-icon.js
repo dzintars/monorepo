@@ -1,12 +1,7 @@
+import { __decorate } from "tslib";
 import { LitElement, customElement, property } from 'lit-element';
 import style from './style';
 import template from './template';
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
 let UiIcon = class UiIcon extends LitElement {
     constructor() {
         super(...arguments);
@@ -16,13 +11,7 @@ let UiIcon = class UiIcon extends LitElement {
         //     Style
         //   ];
         // }
-        /**
-         * The name to say "Hello" to.
-         */
         this.name = 'World';
-        /**
-         * The number of times the button has been clicked.
-         */
         this.count = 0;
     }
     render() {

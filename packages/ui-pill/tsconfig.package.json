@@ -8,7 +8,8 @@
     "declaration": true,
     "declarationMap": false,
     "declarationDir": "./dist/types",
-    "sourceMap": true
+    "sourceMap": true,
+    "types": []
   },
 
   "include": ["./src/**/*"],

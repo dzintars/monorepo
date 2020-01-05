@@ -32,3 +32,9 @@ export class UiIcon extends LitElement {
 }
 
 // customElements.define('ui-pill', UiPill);
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'ui-icon': UiIcon;
+  }
+}

@@ -2,12 +2,12 @@ import {LitElement, customElement, property, TemplateResult} from 'lit-element';
 import style from './style';
 import template from './template';
 
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
+declare global {
+  interface HTMLElementTagNameMap {
+    'ui-pill': UiPill;
+  }
+}
+
 @customElement('ui-pill')
 export class UiPill extends LitElement {
   public static styles = [style];
@@ -44,3 +44,9 @@ export class UiPill extends LitElement {
 }
 
 // customElements.define('ui-pill', UiPill);
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'ui-pill': UiPill;
+  }
+}

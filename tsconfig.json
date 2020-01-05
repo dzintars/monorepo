@@ -1,15 +1,10 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "./tsconfig.google.json",
   "compilerOptions": {
-    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "baseUrl": "./packages",
     "paths": {
-      "@my-sandbox/*": ["packages/*/src"]
-    },
-    "plugins": [
-      {
-        "name": "ts-lit-plugin",
-        "strict": true
-      }
-    ]
+      "@my-sandbox/ui-*": ["./*/src"]
+    }
   }
 }
