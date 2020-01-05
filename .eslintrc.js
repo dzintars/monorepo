@@ -10,7 +10,7 @@ module.exports = {
   ],
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -18,7 +18,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    "@typescript-eslint"
+    // "@typescript-eslint"
+    '@typescript-eslint/eslint-plugin'
   ],
   rules: {
     "no-unexpected-multiline": "off",
@@ -26,8 +27,14 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
     "@typescript-eslint/no-unused-vars": ["warn", {
       "argsIgnorePattern": "^_"
     }]
   },
+  overrides: [
+    {files: ['*.spec.ts'],
+    globals: {chai: 'readonly'}}
+  ]
 };

@@ -11,12 +11,15 @@
     "pub": "lerna publish"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^2.14.0",
     "@typescript-eslint/parser": "^2.14.0",
     "eslint": "^5.16.0",
+    "husky": "^3.1.0",
     "lerna": "^3.20.0",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
-    "tslib": "^1.10.0",
     "typescript": "^3.7.4"
   }
 }

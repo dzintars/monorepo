@@ -45,7 +45,6 @@ yarn bootstrap
 yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev
 yarn add prettier eslint-config-prettier eslint-plugin-prettier --dev
 
-
 This equivalent of npm/yarn publish --access public
 Learna does not support --access flag.
 
@@ -74,3 +73,18 @@ After you can publish them `yarn run pub`
 Lerna will update a package version, push changes to GitHub and publish new version in NPM registry.
 
 ## How to unpublish
+
+## TSC Configuration
+
+```json
+      "baseUrl": ".",
+      "paths": {
+        "@my-sandbox/*": ["packages/*/src"]
+      },
+```
+
+```json
+  "references": [{
+    "path": "../ui-dependent/tsconfig.package.json"
+  }],
+```
