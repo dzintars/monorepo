@@ -230,16 +230,20 @@
         "signature": "15d1d7f076d27ae16d10626263e890f1e39b663ebda325d5dfc41f48620df0ec"
       },
       "./src/style.ts": {
-        "version": "f0f7d2bc818222915020cb6aa7b14036c5d885afe1f13863bc6a115ee5483db7",
+        "version": "e6c4c87688827b59b531ac4adbfd7caf74576c91fd92230379b02b38bfdff27d",
         "signature": "797bb67368329d5fffdf09a6a4d5b65d88215e3e3b9e71fde1bdf59e5399e9d7"
       },
       "./src/template.ts": {
-        "version": "ccab30286aee1c7b76db833c561b1432dc28432189d4fd1c3a551eaf800d2733",
+        "version": "3ce0e33da00cb2c4d5cbe0ffce1ec7f8da334bd24597be10b4b39302103a3d1e",
         "signature": "623fd6b7376898cb5e1a1f00c1f5c801e45f855d611ab01e6fd0f6ecaeab57a6"
       },
+      "./src/models.ts": {
+        "version": "ca6f068145c864fc4ae3688bbcad0d97554f4a117e6ec7e0a3e05769bd5a4971",
+        "signature": "f0ce4686579e39a57dea0621806a53915fe6eda7ef32696f42aba7a63c6dda4b"
+      },
       "./src/ui-pill.ts": {
-        "version": "a83c31ef097305e170d4a81e077900eadbe347208bf98f2977e488a0daaf1b00",
-        "signature": "4ba9b4c9d95c40fc26a1d0405971dc9dda5a60061d903ab57c0f7b528a0354f7"
+        "version": "897a8b368c5a8bd6daafcece043e4f769f2aee02c3c0e88dc52e6ba28fb2e8e3",
+        "signature": "2c14ecdece147ea7de086af9889d8b2a21f047aca876442805b92b9690c4861c"
       },
       "./src/index.ts": {
         "version": "a6b8397483a2f3e924d1c9d8d99a312eb83f1578c8d33a510ca4694c4b9dc354",
@@ -885,10 +889,17 @@
         "../../node_modules/@types/node/util.d.ts",
         "../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./src/models.ts": [
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/ui-pill.ts": [
         "../../node_modules/lit-element/lit-element.d.ts",
         "./src/style.ts",
         "./src/template.ts",
+        "./src/models.ts",
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts",
@@ -1578,7 +1589,8 @@
         "../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/ui-pill.ts": [
-        "../../node_modules/lit-element/lit-element.d.ts"
+        "../../node_modules/lit-element/lit-element.d.ts",
+        "./src/models.ts"
       ],
       "./src/index.ts": [
         "./src/ui-pill.ts"
@@ -2131,6 +2143,7 @@
       "../../node_modules/lit-element/lit-element.d.ts",
       "./src/style.ts",
       "./src/template.ts",
+      "./src/models.ts",
       "./src/ui-pill.ts",
       "./src/index.ts",
       "../../node_modules/@types/eslint-visitor-keys/index.d.ts",

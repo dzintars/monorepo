@@ -1,6 +1,7 @@
 import {LitElement, customElement, property, TemplateResult} from 'lit-element';
 import style from './style';
 import template from './template';
+import {Pill, Styling} from './models';
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -18,28 +19,20 @@ export class UiPill extends LitElement {
   //   ];
   // }
 
-  /**
-   * The name to say "Hello" to.
-   */
-  @property()
-  name = 'World';
+  @property({type: Object})
+  public pill: Pill = {
+    text: 'Not set',
+  };
 
-  /**
-   * The number of times the button has been clicked.
-   */
-  @property({type: Number})
-  count = 0;
+  @property({type: Object})
+  public styling: Styling = {
+    height: '1rem',
+    background: '#006AFF',
+    color: '#FFFFFF',
+  };
 
   protected render(): TemplateResult {
     return template.call(this);
-  }
-
-  public _onClick() {
-    this.count++;
-  }
-
-  foo(): string {
-    return 'foo';
   }
 }
 

@@ -11,32 +11,26 @@ let UiPill = class UiPill extends LitElement {
         //     Style
         //   ];
         // }
-        /**
-         * The name to say "Hello" to.
-         */
-        this.name = 'World';
-        /**
-         * The number of times the button has been clicked.
-         */
-        this.count = 0;
+        this.pill = {
+            text: 'Not set',
+        };
+        this.styling = {
+            height: '1rem',
+            background: '#006AFF',
+            color: '#FFFFFF',
+        };
     }
     render() {
         return template.call(this);
     }
-    _onClick() {
-        this.count++;
-    }
-    foo() {
-        return 'foo';
-    }
 };
 UiPill.styles = [style];
 __decorate([
-    property()
-], UiPill.prototype, "name", void 0);
+    property({ type: Object })
+], UiPill.prototype, "pill", void 0);
 __decorate([
-    property({ type: Number })
-], UiPill.prototype, "count", void 0);
+    property({ type: Object })
+], UiPill.prototype, "styling", void 0);
 UiPill = __decorate([
     customElement('ui-pill')
 ], UiPill);
