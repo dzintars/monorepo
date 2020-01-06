@@ -2,7 +2,7 @@
   "private": false,
   "name": "@my-sandbox/ui-pill",
   "description": "Testing NPM publishing",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "author": "Dzintars Klavins <dzintars.dev@gmail.com> (https://dzintars.dev)",
   "homepage": "https://github.com/dzintars/monorepo/tree/master/packages/ui-pill#readme",
   "license": "MIT",
